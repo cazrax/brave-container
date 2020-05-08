@@ -8,7 +8,8 @@ WORKDIR /usr/src/P3R
 
 COPY startapp.sh /startapp.sh
 
-RUN apt-get -y install \
+RUN apt-get update \
+	&& apt-get -y install \
 	apt-transport-https \
 	curl \
 	&& curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc \
