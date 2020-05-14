@@ -22,6 +22,7 @@ RUN apt-get update \
 	apt-transport-https \
 	curl \
 	gnupg \
+	fonts-takao-mincho \
 	&& curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc \
 	| apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add - \
 	&& echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" \
