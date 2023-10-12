@@ -1,17 +1,10 @@
-FROM jlesage/baseimage-gui:debian-10
+FROM jlesage/baseimage-gui:debian-11
 
 MAINTAINER Poseidon's 3 Rings
 
 ENV APP_NAME="P3R Brave Browser"
 ENV KEEP_APP_RUNNING=1
 ENV ENABLE_CJK_FONT=1
-
-RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* \
-    && localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8 \
-	&& export LANGUAGE=en_US.UTF-8 \
-	&& export LANG=en_US.UTF-8 \
-	&& export LC_ALL=en_US.UTF-8
-ENV LANG en_US.utf8
 
 WORKDIR /usr/src/P3R
 
