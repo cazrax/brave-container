@@ -1,4 +1,4 @@
-FROM jlesage/baseimage-gui:ubuntu-22.04-v4.4
+FROM jlesage/baseimage-gui:debian-11-v4.4.2
 
 ENV KEEP_APP_RUNNING=1
 ENV ENABLE_CJK_FONT=1
