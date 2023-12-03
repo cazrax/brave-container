@@ -10,6 +10,7 @@ COPY startapp.sh /startapp.sh
 RUN apt-get update \
 	&& apt-get -y install \
 	apt-transport-https \
+	procps \
  	apt-utils \
 	curl \
 	gnupg \
