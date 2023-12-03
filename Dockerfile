@@ -1,9 +1,9 @@
-FROM jlesage/baseimage-gui:debian-11-v4.4.2
+FROM jlesage/baseimage-gui:debian-11-v4
 
 ENV KEEP_APP_RUNNING=1
 ENV ENABLE_CJK_FONT=1
 
-WORKDIR /usr/src/cazrax
+WORKDIR /home/nobody
 
 COPY startapp.sh /startapp.sh
 
